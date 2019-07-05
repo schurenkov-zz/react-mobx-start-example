@@ -4,7 +4,8 @@
   "description": "react-mobx-start-example",
   "main": "index.js",
   "scripts": {
-    "start": "set NODE_ENV=development&& webpack-dev-server --open",
+    "start": "node server.js",
+    "dev": "set NODE_ENV=development&& webpack-dev-server --open",
     "build": "set NODE_ENV=production&& webpack -p --progress",
     "precommit": "pretty-quick staged",
     "tslint:prettier-check": "tslint-config-prettier-check ./tslint.json",
