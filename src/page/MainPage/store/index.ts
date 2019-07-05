@@ -19,7 +19,7 @@ class MainStore {
   @action getLists = () =>
     axios({
       method: 'get',
-      url: 'http://strainapi.evanbusse.com/iNDpCGe/strains/search/all',
+      url: 'https://strainapi.evanbusse.com/iNDpCGe/strains/search/all',
     })
       .then(response => {
         runInAction(() => {

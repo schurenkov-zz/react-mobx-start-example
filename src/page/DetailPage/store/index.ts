@@ -32,7 +32,7 @@ class DetailStore {
     this.loading = true;
     axios({
       method: 'get',
-      url: `http://strainapi.evanbusse.com/iNDpCGe/strains/search/name/${name}`,
+      url: `https://strainapi.evanbusse.com/iNDpCGe/strains/search/name/${name}`,
     })
         .then(response => {
           this.detail = response.data[0];
