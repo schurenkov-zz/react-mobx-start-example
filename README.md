@@ -2,6 +2,8 @@
 
 API http://strainapi.evanbusse.com - it's joke!
 
+Demo: https://react-mobx-start-example.herokuapp.com/
+
 Client application on React 16.8
 
 ### Installing
