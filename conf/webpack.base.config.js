@@ -17,6 +17,8 @@ export default new Config().merge({
     filename: 'bundle.js',
   },
   cache: false,
+  target: "web",
+  stats: "errors-only",
   module: {
     rules: [
       {
