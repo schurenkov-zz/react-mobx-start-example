@@ -1,11 +1,29 @@
-a{
+a {
   display: block;
   margin: 20px 0;
   color: red;
   font-weight: bold;
 }
 
-.list{
+.wrap {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  .list {
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+    padding: 5px;
+    margin: 5px;
+    width: 600px;
+  }
+
+  input {
+    height: 60px;
+    width: 600px;
+    padding: 3px 6px;
+    font-size: 26px;
+    font-family: 'Roboto Mono', monospace;
+    margin-bottom: 10px;
+  }
 }

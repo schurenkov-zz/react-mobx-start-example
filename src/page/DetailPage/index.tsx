@@ -17,29 +17,29 @@ interface IProps {
 }
 
 const DetailPage: FC<IProps> = observer(({ match: { params: { name } } }) => {
-  const {
-    loading,
-    detail,
-    setClear
-  } = useDetail(name);
+  const { loading, detail, setClear } = useDetail(name);
 
-    useEffect(() => {
-        return () => {
-            setClear()
-        }
-    }, []);
+  useEffect(() => {
+    return () => {
+      setClear();
+    };
+  }, []);
 
-  return !loading ? (
-    <div>
-      <Link to='/'>Назад</Link>
-      <h1>{detail.name}</h1>
-      <span>{detail.race}</span>
-      <p>{detail.desc}</p>
+  return (
+    <div className="wrap">
+      {!loading ? (
+        <>
+          <Link to="/">Назад</Link>
+          <h1>{detail.name}</h1>
+          <h4>{detail.race}</h4>
+          <div className="container">
+            <p>{detail.desc}</p>
+          </div>{' '}
+        </>
+      ) : (
+        <p>..Загрузка</p>
+      )}
     </div>
-  ) : (
-    <p>
-      Загрузка
-    </p>
   );
 });
 
