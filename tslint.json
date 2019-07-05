@@ -1,0 +1,32 @@
+{
+  "defaultSeverity": "error",
+  "rulesDirectory": ["tslint-plugin-prettier"],
+  "extends": ["tslint:latest", "tslint-react", "tslint-config-airbnb", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": ["config/**/*.js", "node_modules/**/*.ts", "coverage/lcov-report/*.js"]
+  },
+  "rules": {
+    "prettier": [
+      true,
+      {
+        "semi": true,
+        "singleQuote": true,
+        "printWidth": 120,
+        "trailingComma": "es5"
+      }
+    ],
+    "no-console": false,
+    "variable-name": [true, "ban-keywords", "check-format", "allow-pascal-case", "allow-leading-underscore"],
+    "import-name": false,
+    "ordered-imports": false,
+    "interface-name": false,
+    "no-empty-interface": false,
+    "object-literal-sort-keys": false,
+    "object-literal-shorthand": false,
+    "jsx-no-lambda": false,
+    "no-submodule-imports": [true, "excluded-module1", "excluded-module2"],
+    "no-implicit-dependencies": [true, "dev"],
+    "member-access": false
+  },
+  "jsRules": {}
+}
