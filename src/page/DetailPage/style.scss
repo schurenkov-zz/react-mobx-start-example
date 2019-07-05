@@ -1,0 +1,16 @@
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 36px;
+  }
+
+  .container {
+    width: 600px;
+    border: 1px solid grey;
+    padding: 5px;
+    margin: 5px;
+  }
+}
